@@ -1,2 +1,2 @@
-// Rename this file to config.js and add your actual API key
-const API_KEY = "AIzaSyBgu3KYPzTBGsEB7slpdZBfMtWTYYMKq34";
+
+const API_KEY = "AIzaSyAgPkHzKZvwejXN7j3t85Mr_ImO4HB2YaQ";
