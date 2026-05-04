@@ -1,4 +1,5 @@
-const API_KEY = "AIzaSyCVBGMq_nsDdOGCoBTurVEky6Ju-xJHIjM"; 
+
+
 const API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent";
 
 const elements = {
