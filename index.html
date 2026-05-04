@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OptiCode Pro | AI Annotator</title>
+    <!-- Themes and Fonts -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" id="theme-link" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-theme="dark">
+    <header>
+        <div class="logo"><i class="fa-solid fa-microchip"></i> OptiCode Pro</div>
+        <div class="controls">
+            <select id="language" class="btn-outline">
+                <option value="java">Java</option>
+                <option value="python">Python</option>
+                <option value="javascript">JavaScript</option>
+                <option value="cpp">C++</option>
+            </select>
+            <button class="btn-outline" id="loadSampleBtn">Sample</button>
+            <button class="btn-outline" id="themeToggle"><i class="fa-solid fa-sun"></i></button>
+            <button id="analyzeBtn" class="primary-btn">Analyze with AI</button>
+            <button class="btn-outline" id="exportBtn" style="display: none;">Export File</button>
+        </div>
+    </header>
+
+    <main>
+        <!-- User Input Area -->
+        <section class="panel input-panel" id="inputSection">
+            <div class="panel-header">Raw Messy Code</div>
+            <textarea id="codeInput" placeholder="Paste your code here..." spellcheck="false"></textarea>
+        </section>
+
+        <!-- AI Output Area -->
+        <section class="panel output-panel" id="outputSection">
+            <div class="loader" id="loader" style="display: none;">
+                <i class="fa-solid fa-brain fa-spin fa-3x"></i>
+                <p>Gemini is thinking...</p>
+            </div>
+            
+            <div class="code-view" id="cleanCodeView" style="display: none;">
+                <div class="view-header">Cleaned Code</div>
+                <pre><code id="highlightedCode"></code></pre>
+            </div>
+            
+            <div class="analysis-view" id="analysisView" style="display: none;">
+                <div class="view-header">Efficiency Report</div>
+                <div id="analysisCards"></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Syntax Highlighting Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-java.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-cpp.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
