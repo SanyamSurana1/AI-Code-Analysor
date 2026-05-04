@@ -13,4 +13,4 @@ A web-based tool that uses the **Gemini 2.5 Flash API** to automatically refacto
 2. Create a file named `config.js` in the root directory.
 3. Add your Gemini API key from [Google AI Studio](https://aistudio.google.com/) to the file:
    ```javascript
-   const API_KEY = "AIzaSyCVBGMq_nsDdOGCoBTurVEky6Ju-xJHIjM";
+   const API_KEY = "*******************************************";
