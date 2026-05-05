@@ -1,2 +1,2 @@
 
-const API_KEY = "AIzaSyAqBWoDhrTrbhs87j5spPjiAo-IpT6066o";
+const API_KEY = "PASTE_YOUR_API_KEY_HERE";
